@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int HammingEncoder()
+void HammingEncoder()
 {
     int data[10];
     printf("ENTER THE 4 BITS: ");
@@ -18,10 +18,10 @@ int HammingEncoder()
         printf("%d ",data[i]);
     }
 
-    return *data;
+    
 }
 
-int HammingDecoder()
+void HammingDecoder()
 {
     int rec[10];
     printf("\nENTER THE RECIEVED DATA: ");
@@ -56,8 +56,8 @@ int HammingDecoder()
 }
 int main()
 {
-    int *encoded=HammingEncoder();
-    int decoded=HammingDecoder();
+    HammingEncoder();
+    HammingDecoder();
     
 
 }
